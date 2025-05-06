@@ -134,7 +134,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <div class="content">
+        <div class="content has-text-justified">
           <h2 class="title is-3">Teaser</h2>
           <img src="./static/images/teaser.pdf"
             alt="Overview."/>
@@ -174,7 +174,7 @@
     <div class="columns is-centered">
       <!-- NOCS scene Representation. -->
       <div class="column">
-        <div class="content">
+        <div class="content has-text-justified">
           <h2 class="title is-3">NOCS scene Representation</h2>
           <img src="./static/images/pipeline.pdf"
             alt="NOCS scene Representation."/>
@@ -192,21 +192,29 @@
     <div class="columns is-multiline is-centered">
       <!-- Architecture. -->
       <div class="column is-half has-text-centered">
-        <div class="content">
+        <div class="content has-text-justified">
           <h2 class="title is-3">Haptic Map Generation</h2>
           <img src="./static/images/SplatTouchDiffusionModel.png"
             alt="Diffusion Model."/>
-            <p>Our diffusion model for cross-modal touch generation. The conditioning vector encapsulates the aligned RGB, depth and NOCS maps to obtain the best possible representation of the novel touch sample τ at position <i>[R|t]</i>.</p>
         </div>
       </div>
       <!--/ Architecture. -->
       <!-- Architecture. -->
       <div class="column is-half has-text-centered">
-        <div class="content">
+        <div class="content has-text-justified">
           <h2 class="title is-3">3D Contact Localization</h2>
           <img src="./static/images/SplatTouchSimSiam.png"
             alt="Localization."/>
-            <p>Our contrastive networks for 3D contact localization. NOCS and touch are jointly train to obtain representative feature. At test time, given a query touch, the 3D contact localization branch predicts the color that can be mapped to the 3D space thanks to the NOCS map representation.</p>
+        </div>
+      </div>
+      <div class="column is-half has-text-centered">
+        <div class="content has-text-justified">
+          <p>Our diffusion model for cross-modal touch generation. The conditioning vector encapsulates the aligned RGB, depth and NOCS maps to obtain the best possible representation of the novel touch sample τ at position <i>[R|t]</i>.</p>
+        </div>
+      </div>
+      <div class="column is-half has-text-centered">
+        <div class="content has-text-justified">
+          <p>Our contrastive networks for 3D contact localization. NOCS and touch are jointly train to obtain representative feature. At test time, given a query touch, the 3D contact localization branch predicts the color that can be mapped to the 3D space thanks to the NOCS map representation.</p>
         </div>
       </div>
 </section>
@@ -249,14 +257,15 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <!-- <pre><code>@article{stefani2025splattouch,
+    <pre><code>
+@article{stefani2025splattouch,
   title={SplatTouch: Explicit 3D Representation Binding Vision and Touch},
   author={Stefani, Antonio Luigi and Bisagno, Niccol{\'o} and Conci, Nicola and De Natale, Francesco},
-  booktitle={Proceedings of the Computer vision and pattern recognition (CVPR) workshops},
-  pages={0--0},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month={June},
   year={2025}
-} -->
-  coming soon
+}
+    </code></pre>
   </div>
 </section>
 
